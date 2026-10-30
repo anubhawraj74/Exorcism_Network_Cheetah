@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <title>Exorcism Emergency Network | Paranormal Command</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="intro-screen" id="introScreen" aria-label="Exorcism Emergency Network introduction">
+    <div class="intro-sigil">✦</div>
+    <div class="intro-kicker">INCOMING TRANSMISSION / SECURE CHANNEL</div>
+    <div class="intro-title">THE UNKNOWN<br><em>IS CALLING.</em></div>
+    <div class="intro-progress"><span></span></div>
+    <div class="intro-bottom"><span>CHEETAH 2.0</span><span>INITIALIZING RESPONSE NETWORK</span></div>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span><span>EXORCISM<span class="brand-red">.NET</span><small>EMERGENCY NETWORK · CHEETAH 2.0</small></span></a>
+    <div class="top-actions"><span class="status-dot"></span><span class="status-label">NETWORK ONLINE</span><button class="sound-btn" id="soundToggle" aria-label="Toggle ambient soundtrack" title="Toggle original ambient soundtrack">♫ <span>Ambient off</span></button><button class="portal-trigger" id="portalOpen" aria-haspopup="dialog" aria-controls="portalMenu"><span class="portal-icon">✣</span> OPEN PORTAL <span>↗</span></button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-pulse"></span> GLOBAL PARANORMAL RESPONSE SYSTEM <span class="eyebrow-line"></span> <span>EST. 1999</span></div>
+        <h1>WHEN THE<br><em>UNEXPLAINED</em><br>CALLS.</h1>
+        <p class="hero-lede">One network. Every disturbance. <strong>No soul left unanswered.</strong> Report supernatural activity and dispatch trained investigators before the darkness spreads.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#report">＋ REPORT AN INCIDENT <span>↗</span></a><a class="btn btn-ghost" href="#dashboard">ENTER COMMAND CENTRE <span>↓</span></a></div>
+        <div class="hero-foot"><span>SECURE CHANNEL <b>ENCRYPTED</b></span><span>RESPONSE TIME <b>04:32 AVG</b></span><span>THREAT LEVEL <b class="red">ELEVATED</b></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="sigil">✦</div>
+        <div class="hero-cross">†</div>
+        <div class="hero-art-label label-top">FIG. 001 / UNKNOWN ENTITY</div>
+        <div class="hero-art-label label-bottom">DO NOT APPROACH ALONE</div>
+        <div class="scan"></div>
+      </div>
+      <div class="hero-index">01 <span>—</span> THE CALL</div>
+    </section>
+
+    <section class="ticker"><div class="ticker-track"><span>⚠ ANOMALOUS ACTIVITY DETECTED</span><i>✦</i><span>KEEP YOUR CHANNEL OPEN</span><i>✦</i><span>DO NOT ENGAGE ALONE</span><i>✦</i><span>ANOMALOUS ACTIVITY DETECTED</span><i>✦</i><span>KEEP YOUR CHANNEL OPEN</span><i>✦</i></div></section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="section-heading"><div><div class="eyebrow">01 / SITUATION ROOM</div><h2>COMMAND <em>OVERVIEW</em></h2></div><div class="updated"><span class="live-pulse"></span> LIVE FEED <span id="clock">--:--:--</span><button class="refresh-btn" id="refreshFeed" type="button">↻ REFRESH</button></div></div>
+      <div class="stats-grid">
+        <article class="stat-card"><div class="stat-top">ACTIVE INCIDENTS <span>↗</span></div><div class="stat-number" data-count="24">00</div><div class="stat-bottom"><span class="red">+3</span> in the last hour</div><div class="stat-line"><i style="width:76%"></i></div></article>
+        <article class="stat-card"><div class="stat-top">CASES CONTAINED <span>✓</span></div><div class="stat-number" data-count="186">000</div><div class="stat-bottom"><span class="green">+12%</span> this month</div><div class="stat-line"><i style="width:88%"></i></div></article>
+        <article class="stat-card"><div class="stat-top">FIELD OPERATIVES <span>⌖</span></div><div class="stat-number" data-count="42">00</div><div class="stat-bottom"><span class="green">18</span> currently deployed</div><div class="stat-line"><i style="width:61%"></i></div></article>
+        <article class="stat-card"><div class="stat-top">THREAT INDEX <span>!</span></div><div class="stat-number threat-number">7.8<span>/10</span></div><div class="stat-bottom"><span class="red">HIGH</span> — exercise caution</div><div class="stat-line danger"><i style="width:78%"></i></div></article>
+      </div>
+      <div class="command-grid">
+        <article class="panel map-panel">
+          <div class="panel-head"><div><span class="panel-kicker">GLOBAL ACTIVITY</span><h3>Disturbance map</h3></div><span class="panel-tag"><i></i> TRACKING</span></div>
+          <div class="map-visual">
+            <div class="map-grid"></div><div class="map-world">◎</div>
+            <div class="map-point p1"><b></b><span>NOIDA / IN-04</span></div><div class="map-point p2"><b></b><span>LONDON / UK-11</span></div><div class="map-point p3"><b></b><span>NEW YORK / US-02</span></div><div class="map-point p4"><b></b><span>TOKYO / JP-08</span></div>
+            <div class="map-coordinates">28° 32' N&nbsp;&nbsp; 77° 23' E</div><button class="map-alert" id="mapAlert" type="button">＋ SIMULATE ALERT</button><div class="map-legend"><span><i class="legend-red"></i> HIGH</span><span><i class="legend-amber"></i> MEDIUM</span><span><i class="legend-green"></i> CONTAINED</span></div>
+          </div>
+        </article>
+        <article class="panel feed-panel">
+          <div class="panel-head"><div><span class="panel-kicker">INCOMING TRANSMISSIONS</span><h3>Signal feed</h3></div><span class="panel-tag">LIVE</span></div>
+          <div class="signal-list" id="signalList">
+            <div class="signal"><span class="signal-icon red-bg">!</span><div><b>Entity manifestation</b><small>Sector 07 · Noida, IN</small></div><time>02m</time></div>
+            <div class="signal"><span class="signal-icon amber-bg">⌁</span><div><b>Unexplained audio pattern</b><small>Zone 12 · London, UK</small></div><time>11m</time></div>
+            <div class="signal"><span class="signal-icon green-bg">✓</span><div><b>Containment confirmed</b><small>Sector 03 · New York, US</small></div><time>28m</time></div>
+            <div class="signal"><span class="signal-icon red-bg">!</span><div><b>Shadow movement reported</b><small>District 04 · Tokyo, JP</small></div><time>41m</time></div>
+          </div>
+          <button class="text-button" onclick="document.querySelector('#incidents').scrollIntoView({behavior:'smooth'})">VIEW ALL TRANSMISSIONS ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section incidents-section" id="incidents">
+      <div class="section-heading"><div><div class="eyebrow">02 / CASE FILES</div><h2>ACTIVE <em>INCIDENTS</em></h2></div><div class="filter-row"><button class="filter active" data-filter="all">ALL CASES</button><button class="filter" data-filter="critical">CRITICAL</button><button class="filter" data-filter="investigating">INVESTIGATING</button></div></div>
+      <div class="incident-grid" id="incidentGrid">
+        <article class="incident-card" data-status="critical"><div class="incident-image image-one"><span class="case-id">CASE #EN-2048</span><span class="severity critical">● CRITICAL</span><div class="image-symbol">†</div></div><div class="incident-info"><div class="incident-meta">NOIDA, INDIA <span>02:14 AM</span></div><h3>The Silent Chapel</h3><p>Multiple witnesses report whispers from an abandoned chapel. Temperature dropped 19°C in seconds.</p><div class="incident-footer"><span>ENTITY TYPE <b>UNKNOWN</b></span><button class="details-btn" data-case="The Silent Chapel">CASE DETAILS ↗</button></div></div></article>
+        <article class="incident-card" data-status="investigating"><div class="incident-image image-two"><span class="case-id">CASE #EN-2047</span><span class="severity medium">● MEDIUM</span><div class="image-symbol">⌁</div></div><div class="incident-info"><div class="incident-meta">LONDON, UK <span>01:48 AM</span></div><h3>Voices in the Static</h3><p>Radio transmissions contain a voice repeating the names of missing residents. Source unidentified.</p><div class="incident-footer"><span>ENTITY TYPE <b>EVP / AUDIO</b></span><button class="details-btn" data-case="Voices in the Static">CASE DETAILS ↗</button></div></div></article>
+        <article class="incident-card" data-status="investigating"><div class="incident-image image-three"><span class="case-id">CASE #EN-2046</span><span class="severity medium">● MEDIUM</span><div class="image-symbol">◉</div></div><div class="incident-info"><div class="incident-meta">TOKYO, JAPAN <span>12:32 AM</span></div><h3>The Corridor Watcher</h3><p>A dark silhouette appears at the end of a hotel corridor, but vanishes on every camera replay.</p><div class="incident-footer"><span>ENTITY TYPE <b>APPARITION</b></span><button class="details-btn" data-case="The Corridor Watcher">CASE DETAILS ↗</button></div></div></article>
+      </div>
+    </section>
+
+    <section class="protocol-section" id="protocol"><div class="protocol-inner"><div><div class="eyebrow">03 / FIELD MANUAL</div><h2>DON'T PANIC.<br><em>FOLLOW PROTOCOL.</em></h2><p>When you encounter unexplained activity, your first priority is survival. Our response network will take it from there.</p><a class="btn btn-primary" href="#report">INITIATE A REPORT ↗</a></div><div class="protocol-steps"><div class="step"><span>01</span><div><h3>SECURE YOURSELF</h3><p>Move to a safe, well-lit location. Do not attempt contact.</p></div><b>↗</b></div><div class="step"><span>02</span><div><h3>DOCUMENT THE EVENT</h3><p>Record time, location, sounds and visible details if safe.</p></div><b>↗</b></div><div class="step"><span>03</span><div><h3>ALERT THE NETWORK</h3><p>Submit a report. Our command centre will assess the threat.</p></div><b>↗</b></div><div class="step"><span>04</span><div><h3>AWAIT INSTRUCTIONS</h3><p>Keep your phone on and follow instructions from responders.</p></div><b>↗</b></div></div></div></section>
+
+    <section class="section report-section" id="report">
+      <div class="section-heading"><div><div class="eyebrow">04 / OPEN A CASE</div><h2>REPORT THE <em>UNKNOWN</em></h2></div><span class="secure-note">⌑ SECURE SUBMISSION</span></div>
+      <div class="report-layout"><div class="report-aside"><div class="report-stamp">E<br><span>N</span></div><h3>EVERY DETAIL<br>MATTERS.</h3><p>Your report goes directly to our command desk. Share only what you witnessed. Never put yourself at risk to collect evidence.</p><div class="emergency-note"><span>!</span><div><b>IMMEDIATE DANGER?</b><small>Contact your local emergency services first.</small></div></div></div>
+        <form class="report-form" id="reportForm">
+          <div class="form-row"><label>YOUR NAME<input name="name" placeholder="Anonymous operative" required></label><label>CONTACT EMAIL<input name="email" type="email" placeholder="you@example.com" required></label></div>
+          <div class="form-row"><label>INCIDENT LOCATION<input name="location" placeholder="City, district or coordinates" required></label><label>THREAT LEVEL<select name="threat"><option>Unclear / Unknown</option><option>Low — unusual activity</option><option>Medium — repeated sightings</option><option>High — direct encounter</option><option>Critical — immediate danger</option></select></label></div>
+          <label>WHAT DID YOU WITNESS?<textarea name="details" rows="4" placeholder="Describe what happened, when it started, and anything unusual you noticed..." required></textarea></label>
+          <div class="form-bottom"><span>🔒 YOUR TRANSMISSION IS ENCRYPTED</span><button class="btn btn-primary" type="submit">TRANSMIT REPORT <span>↗</span></button></div>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading"><div><div class="eyebrow">05 / BUILT FOR THE UNSEEN</div><h2>MORE THAN A <em>WEBSITE</em></h2></div><span class="secure-note">INTERACTIVE SYSTEM DEMO</span></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>◉</span><small>01 / MONITOR</small><h3>Live Threat Dashboard</h3><p>A command-style overview of incidents, response teams, and threat levels at a glance.</p></article>
+        <article class="feature-card"><span>⌁</span><small>02 / INVESTIGATE</small><h3>Case File Explorer</h3><p>Filter active cases and inspect incident details through an interactive case interface.</p></article>
+        <article class="feature-card"><span>＋</span><small>03 / RESPOND</small><h3>Incident Reporting</h3><p>Submit a demo transmission and see it appear immediately in the incoming signal feed.</p></article>
+        <article class="feature-card"><span>✣</span><small>04 / NAVIGATE</small><h3>Portal Navigation</h3><p>The Lost a Limb challenge: no traditional navigation bar, while every section stays reachable.</p></article>
+      </div>
+    </section>
+
+    <section class="section team-section" id="team"><div class="section-heading"><div><div class="eyebrow">05 / RESPONSE UNIT</div><h2>THE FIELD <em>OPERATIVES</em></h2></div><span class="secure-note">CLEARANCE LEVEL 04</span></div><div class="team-grid">
+      <article class="team-card"><div class="avatar avatar-one">V</div><div><span class="team-role">LEAD INVESTIGATOR</span><h3>V. MORROW</h3><p>Paranormal forensics · 12 years</p></div><span class="availability">● ON CALL</span></article>
+      <article class="team-card"><div class="avatar avatar-two">A</div><div><span class="team-role">FIELD SPECIALIST</span><h3>A. CROSS</h3><p>Entity containment · 9 years</p></div><span class="availability">● DEPLOYED</span></article>
+      <article class="team-card"><div class="avatar avatar-three">E</div><div><span class="team-role">SIGNAL ANALYST</span><h3>E. VALE</h3><p>EVP &amp; signal analysis · 7 years</p></div><span class="availability">● ON CALL</span></article>
+    </div></section>
+
+    <section class="team-identity" id="team">
+      <div class="team-identity-top"><span class="eyebrow">06 / THE PEOPLE BEHIND THE SIGNAL</span><span class="team-id">TEAM ID / C2.0-2026</span></div>
+      <div class="team-identity-main">
+        <div class="team-emblem"><span>✦</span><small>EST.</small><b>2.0</b></div>
+        <div class="team-copy"><span class="team-overline">INDEPENDENT DIGITAL RESPONSE UNIT</span><h2>CHEETAH <em>2.0</em></h2><p>Two minds. One mission. Building a safer bridge between the unexplained and the understood.</p>
+          <div class="member-pills"><span><b>AR</b> ANUBHAW RAJ <small>DESIGN & DEVELOPMENT</small></span><span><b>ST</b> SHLOK TYAGI <small>RESEARCH & DEVELOPMENT</small></span></div>
+        </div>
+        <div class="team-social"><span>FOLLOW THE BUILD</span><a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener"><span class="instagram-icon">◎</span> INSTAGRAM <b>↗</b></a><small>Replace the link with your team's Instagram profile.</small></div>
+      </div>
+    </section>
+    <section class="sponsor-alliance" id="alliance">
+      <div class="alliance-kicker"><span class="live-pulse"></span> TRUSTED ALLIANCE / NETWORK SUPPORT</div>
+      <div class="alliance-clean-main">
+        <div class="sponsor-seal" aria-hidden="true"><span>⚑</span><small>K</small></div>
+        <div class="alliance-clean-copy">
+          <span class="alliance-overline">AN ALLY IN THE DARK</span>
+          <h2>KAPIDHWAJ</h2>
+          <p>When the unknown calls, our allies stand with the network. Together, we keep the signal alive.</p>
+          <a class="alliance-primary" href="https://www.instagram.com/kapidhwaj.innovations/" target="_blank" rel="noopener">FOLLOW @KAPIDHWAJ.INNOVATIONS <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">✦</span><span>EXORCISM<span class="brand-red">.NET</span><small>EMERGENCY NETWORK</small></span></a><div class="footer-shortcuts"><a href="#dashboard">COMMAND</a><a href="#incidents">CASES</a><a href="#protocol">PROTOCOL</a><a href="#report">REPORT</a><a href="#features">FEATURES</a><a href="#team">TEAM</a><a href="#alliance">ALLIANCE</a></div><span>© 2026 EXORCISM EMERGENCY NETWORK.</span><a class="footer-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener">◎ INSTAGRAM ↗</a><span class="footer-warning">BUILT BY CHEETAH 2.0</span></footer>
+
+  <div class="portal-overlay" id="portalMenu" aria-hidden="true">
+    <div class="portal-panel" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
+      <button class="portal-close" id="portalClose" aria-label="Close portal">×</button>
+      <span class="eyebrow">NETWORK ACCESS / SELECT DESTINATION</span>
+      <h2 id="portalTitle">CHOOSE YOUR <em>DESTINATION</em></h2>
+      <p class="portal-intro">No navigation bar. No dead ends. Every sector is one click away.</p>
+      <div class="portal-links">
+        <a href="#home"><span>00</span><b>THE CALL</b><small>Return to the beginning</small><i>↗</i></a>
+        <a href="#dashboard"><span>01</span><b>COMMAND CENTRE</b><small>Live network overview</small><i>↗</i></a>
+        <a href="#incidents"><span>02</span><b>ACTIVE INCIDENTS</b><small>Browse current case files</small><i>↗</i></a>
+        <a href="#protocol"><span>03</span><b>FIELD PROTOCOL</b><small>Read safety instructions</small><i>↗</i></a>
+        <a href="#report"><span>04</span><b>REPORT AN INCIDENT</b><small>Send a new transmission</small><i>↗</i></a>
+        <a href="#features"><span>05</span><b>PROJECT FEATURES</b><small>Explore the response system</small><i>↗</i></a>
+        <a href="#team"><span>06</span><b>CHEETAH 2.0</b><small>Meet the project team</small><i>↗</i></a>
+        <a href="#alliance"><span>07</span><b>OUR ALLY</b><small>Meet the network partner</small><i>↗</i></a>
+      </div>
+      <div class="portal-foot"><span><i class="live-pulse"></i> ALL DESTINATIONS ACCESSIBLE</span><span>PRESS ESC TO CLOSE</span></div>
+    </div>
+  </div>
+  <div class="modal" id="caseModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><span class="eyebrow">CLASSIFIED CASE FILE</span><h2 id="modalTitle">CASE DETAILS</h2><p>This incident is currently under investigation. Field operatives have been notified. Avoid the reported location and do not attempt to interact with the suspected entity.</p><div class="modal-status"><span class="live-pulse"></span> INVESTIGATION IN PROGRESS</div><button class="btn btn-primary" id="modalOk">ACKNOWLEDGED</button></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
